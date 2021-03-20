@@ -1,0 +1,11 @@
+<div class="display-wrapper">
+  <ul>
+    <li *ngFor="let n of elements;">
+      <!-- <div class="dummy"></div>-->
+      <div class="content" [ngClass]="'elem-'+n">
+        <span>&nbsp;</span> {{n}}
+      </div>
+      <!-- <span>&nbsp;</span> {{n}} -->
+    </li>
+  </ul>
+</div>

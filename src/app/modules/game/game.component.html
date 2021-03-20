@@ -1,0 +1,19 @@
+<div class="game-container container">
+
+  <div class="header">
+    <button class="btn btn-blue" (click)="shuffle()" [disabled]="disableShuffle">SHUFFLE</button>
+    <button class="btn btn-blue" (click)="sort()" [disabled]="disableSort">SORT</button>
+  </div>
+
+  <div class="child-container w-100">
+    <div class="col-6">
+      <!-- <app-grid-child #grid></app-grid-child> -->
+      <app-display class="grid-wrapper" #grid></app-display>
+    </div>
+    <div class="col-6">
+      <!-- <app-list-child #list></app-list-child> -->
+      <app-display class="list-wrapper" #list></app-display>
+    </div>
+  </div>
+
+</div>
